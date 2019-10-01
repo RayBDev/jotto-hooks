@@ -5,8 +5,6 @@ import Congrats from "./Congrats";
 import { findByTestAttr, checkProps } from "../../test/testUtils";
 import languageContext from "../contexts/languageContext";
 
-const defaultProps = { success: false };
-
 /**
  * Factory function to create a ShallowWrapper for the Congrats component
  * @param {object} testValues - Context values specific to this setup
