@@ -5,7 +5,7 @@
  *                        for example: {type: "setSecretWord", payload: "party"}
  * @return {object} - new state
  */
-export const reducer = (state, action) => {
+const reducer = (state, action) => {
   switch (action.type) {
     case "setSecretWord":
       return { ...state, secretWord: action.payload };
@@ -15,3 +15,5 @@ export const reducer = (state, action) => {
       throw new Error(`Invalid action type: ${action.type}`);
   }
 };
+
+export default reducer;

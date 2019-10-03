@@ -5,12 +5,12 @@ import languageContext from "../contexts/languageContext";
 import stringsModule from "../helpers/strings";
 
 const Input = ({ secretWord }) => {
+  const language = React.useContext(languageContext);
   const [currentGuess, setCurrentGuess] = React.useState("");
   const submitForm = e => {
     e.preventDefault();
     setCurrentGuess(currentGuess);
   };
-  const language = React.useContext(languageContext);
 
   return (
     <div data-test="component-input">
